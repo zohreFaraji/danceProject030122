@@ -1,0 +1,159 @@
+body {
+    background-color: rgb(191, 191, 191);
+}
+
+.txtTopHead {
+    >h2 {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 23px;
+        color: white;
+        font-size: 30px;
+        font-weight: normal;
+    }
+}
+
+nav {
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(251, 126, 79);
+    position: relative;
+
+    >* {
+        font-size: 15px;
+        color: white;
+    }
+
+    >a:hover,
+    >ul>li>a:hover {
+        background-color: rgba(68, 68, 68, 0.945);
+    }
+
+    >ul {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .backHome {
+            background-color: rgba(68, 68, 68, 0.945);
+            margin-right: 3px;
+        }
+
+        >li {
+            /* background-color: red; */
+
+            >a {
+                /* background-color: purple; */
+                display: flex;
+                height: 100%;
+                align-items: center;
+                padding: 0 20px;
+                text-transform: capitalize;
+                transition: .3s;
+            }
+
+            &:hover>ul {
+                height: 320px;
+            }
+
+            >ul {
+                width: 100%;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                height: 0;
+                overflow: hidden;
+                background-color: #888;
+                color: white;
+                border-top: 2px solid rgb(191, 191, 191);
+
+                >li {
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+
+                    >div {
+                        width: 25%;
+
+                        >* {
+                            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        }
+
+                        &:nth-of-type(1) {
+                            width: 30%;
+
+                            >figure {
+                                margin: 18px 12px 7px;
+
+                                >img {
+                                    object-fit: cover;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+
+                                >figcaption {
+                                    width: 100%;
+                                    height: 40px;
+                                    background-color: rgb(251, 126, 79);
+                                    color: white;
+                                    margin-top: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 18px;
+
+                                }
+                            }
+                        }
+
+
+                        >h3 {
+                            display: flex;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            font-weight: normal;
+                            padding: 20px 0 0 20px;
+                        }
+
+                        >ul {
+
+                            padding: 10px 20px 5px;
+
+                            >li {
+                                font-size: 14px;
+                                line-height: 27px;
+                            }
+                        }
+
+                        >a {
+
+                            background-color: rgb(251, 126, 79);
+                            width: 26px;
+                            height: 18px;
+                            padding: 7px 10px;
+                            font-size: 11px;
+                            margin-left: 20px;
+                            transition: .4s;
+
+                            &:hover {
+                                background-color: transparent;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    >a {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        transition: .3s;
+    }
+}

@@ -1,0 +1,788 @@
+main {
+    width: 100%;
+
+    >.topSide {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        color: white;
+
+        >.row {
+            justify-content: space-between;
+            padding: 0 40px;
+
+            >* {
+                /* border: 2px solid red; */
+                min-width: 50px;
+                height: 100%;
+            }
+
+            >div {
+                >* {
+
+                    padding-right: 40px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 13px;
+                    font-weight: normal;
+                    color: rgba(250, 246, 246, 0.938);
+                }
+
+                >address {
+                    font-style: normal;
+                }
+            }
+
+            >ul {
+                align-items: center;
+
+                /* border: 1px solid white; */
+                >li {
+                    font-size: 14px;
+                    height: 100%;
+
+                    >a {
+                        padding-left: 20px;
+                        display: flex;
+                        height: 100%;
+                        /* background-color: red; */
+                        align-items: center;
+                    }
+                }
+
+            }
+        }
+    }
+
+    /* end topSide  */
+
+    /* start headTop */
+    >.headTop {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../../img/hero-1-scaled.jpg);
+        background-size: cover;
+        position: relative;
+
+        >.row {
+            >* {
+                width: 100%;
+                /* border: 4px solid peru; */
+                height: fit-content;
+                margin: 14px 0;
+                position: relative;
+                z-index: 3;
+            }
+
+            >header {
+                .row {
+                    padding: 0 50px;
+
+                    >figure {
+                        width: 15%;
+
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                            cursor: pointer;
+                        }
+                    }
+
+                    >ul {
+                        width: 70%;
+                        display: flex;
+                        padding-left: 50px;
+                        font-size: 17px;
+                        display: flex;
+                        align-items: center;
+                        align-items: center;
+                        /* justify-content: center; */
+
+                        >li {
+                            padding-right: 40px;
+                            height: 100%;
+                            text-transform: capitalize;
+                            /* background-color: red; */
+
+                            /* width: 100%; */
+                            >a {
+                                color: white;
+                                /* background-color: purple; */
+                                display: flex;
+                                height: 100%;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+
+                                &:hover::after {
+                                    width: 100%;
+                                }
+
+
+                                &::after {
+                                    transition: .4s;
+                                    content: '';
+                                    display: flex;
+                                    width: 0;
+                                    height: 1px;
+                                    background-color: white;
+                                    position: absolute;
+                                    bottom: 15px;
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    >.row {
+                        width: 15%;
+                        display: flex;
+                        align-items: center;
+                        padding: 0 2px;
+                        /* background-color: red; */
+
+                        >* {
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            /* margin-left:0 15px; */
+                        }
+
+                        >a {
+                            width: 155px;
+                            height: 48px;
+                            border: 1px solid white;
+                            /* background-color: brown; */
+                            padding: 0 13px;
+                            transition: .4s;
+
+                            >i {
+                                padding-left: 3px;
+                                display: flex;
+                                align-items: center;
+                            }
+
+                            &:hover {
+                                background-color: white;
+                                color: rgb(0, 0, 0);
+                            }
+                        }
+
+                        >i {
+                            font-size: 30px;
+                            padding-left: 20px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            >section {
+                >* {
+                    color: white;
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;
+                    line-height: 73px;
+                }
+
+                >h2 {
+                    font-size: 73px;
+                    font-weight: 600;
+                }
+
+                >p {
+                    font-size: 20px;
+                    /* line-height: 26px; */
+                }
+
+                >.row {
+                    margin-top: 30px;
+                    /* background-color: red; */
+                    justify-content: center;
+                    width: 100%;
+                    height: 55px;
+
+                    >a {
+                        width: 260px;
+                        background-color: black;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+
+                        >.row {
+                            display: flex;
+                            justify-content: center;
+                            position: relative;
+                            transition: .4s;
+
+                            >i {
+                                padding-left: 5px;
+                                font-size: 20px;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: white;
+                            color: black;
+                        }
+
+                        &:hover>div {
+                            left: 5px;
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        &::before {
+            content: '';
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(27, 27, 27, 0.596);
+            width: inherit;
+            height: inherit;
+        }
+
+
+    }
+
+    /* end headTop */
+    /* start off */
+    >.off {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(230, 226, 245);
+
+        >.row {
+            align-items: center;
+            justify-content: center;
+
+            >* {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    /* start fashion */
+    >.fashion {
+        width: 100%;
+        height: 85vh;
+
+        >.row {
+            justify-content: center;
+            align-items: center;
+            padding: 49px 20px;
+
+            >figure {
+                height: 486px;
+                width: 373px;
+                margin: 0 20px;
+                position: relative;
+                transition: .4s;
+
+                >img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+
+                >.row {
+                    display: flex;
+                    justify-content: center;
+                    /* align-items: center; */
+                    color: white;
+                    width: 333px;
+                    height: 276px;
+                    position: absolute;
+                    bottom: -40px;
+                    left: 20px;
+                    background-color: white;
+                    color: black;
+                    transition: .5s;
+                    z-index: 999;
+
+                    >.box {
+                        >* {
+                            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        }
+
+                        >h3 {
+                            text-align: center;
+                            font-size: 18px;
+                            line-height: 80px;
+                        }
+
+                        >p {
+
+                            font-size: 13px;
+                        }
+
+                        >hr {
+                            font-size: 15px;
+                            border: .7px solid rgba(206, 203, 203, 0.623);
+                            margin: 24px 0;
+                        }
+
+                        >a {
+                            /* background-color: red; */
+                            padding: 20px 0;
+                            display: flex;
+                            justify-content: center;
+
+                        }
+
+                        >button {
+                            width: 333px;
+                            height: 58px;
+                            background-color: black;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            border: none;
+                            outline: none;
+                            color: white;
+                            font-size: 14px;
+                            cursor: pointer;
+
+                            >i {
+                                font-size: 14px;
+                                height: 100%;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.616);
+                    width: 0;
+                    height: 0;
+                }
+
+                &:hover {
+                    transform: scale(1.02);
+
+                    >.row {
+                        bottom: -20px;
+                    }
+
+                    &::after {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    /* end fashion */
+
+    /* start dance */
+    >.dance {
+        display: flex;
+        justify-content: center;
+
+        >div {
+            width: 77%;
+            margin-top: 90px;
+            height: 80vh;
+
+            >.row {
+                justify-content: space-between;
+                background-color: rgb(230, 226, 245);
+
+                >article {
+                    width: 60%;
+                    padding: 130px 100px;
+
+                    >* {
+                        margin-bottom: 60px;
+                    }
+
+                    >h2 {
+                        font-size: 40px;
+                        font-weight: bolder;
+                    }
+
+                    >p {
+                        font-size: 17px;
+                        color: rgba(22, 22, 22, 0.911);
+                    }
+
+                    >a {
+                        width: 250px;
+                        border: 1px solid black;
+                        background-color: white;
+                        color: black;
+                        padding: 18px 35px;
+                        display: flex;
+                        transition: .4s;
+
+                        .row {
+                            position: relative;
+                            transition: .2s;
+                            margin-left: 3px;
+
+                            >i {
+                                font-size: 20px;
+                                position: absolute;
+                                left: 2px;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: black;
+                            color: white;
+
+                            >.row>i {
+                                left: 10px;
+                            }
+                        }
+                    }
+                }
+
+                >figure {
+                    width: 40%;
+                    position: relative;
+                    height: 100%;
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    >a {
+                        padding: 15px 25px;
+                        background-color: white;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        color: color;
+                        display: flex;
+                        transition: .4s;
+
+                        >.row {
+                            position: relative;
+                            margin: 0 10px 0 5px;
+                            transition: .2s;
+
+                            >i {
+                                position: absolute;
+                                left: 0;
+                                /* border: 1px solid peru; */
+                                font-size: 20px;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: black;
+                            color: white;
+
+                            >.row>i {
+                                left: 4px;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* end dance */
+    /* start video */
+    >.video {
+        margin-top: 120px;
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(183, 136, 230);
+        position: relative;
+
+        >video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.377);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        >.row {
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+
+            >div {
+
+                >* {
+                    width: 100%;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                >h2 {
+                    font-size: 80px;
+                    ;
+                    font-weight: bolder;
+                }
+
+                >p {
+                    font-size: 20px;
+                    font-weight: normal;
+                    /* margin-top: -180px; */
+                }
+
+                >.row {
+                    justify-content: center;
+
+                    >a {
+                        display: flex;
+                        outline: none;
+                        margin-top: 80px;
+                        padding: 18px 27px;
+                        border: 1px solid white;
+                        width: 30%;
+                        transition: .4s;
+
+                        >.row {
+                            position: relative;
+                            transition: .2s;
+
+                            >i {
+                                font-size: 20px;
+                                margin-left: 5px;
+                                position: absolute;
+                                left: 0;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: black;
+                            border: none;
+                            color: white;
+
+                            >.row>i {
+                                left: 14px;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* end video */
+
+    /* start meet  */
+    >.meet {
+        justify-content: center;
+        align-items: center;
+        /* background-color: black; */
+        width: 100%;
+        height: 60vh;
+        margin-top: 120px;
+        display: flex;
+
+        >.row {
+            width: 85%;
+            height: 100%;
+            display: flex;
+            /* background-color: red; */
+
+            >div {
+                width: 25%;
+                /* border: 4px solid yellow; */
+                padding: 20px;
+                padding-bottom: 0;
+
+                >h2 {
+                    font-size: 40px;
+                    font-weight: bolder;
+                    padding-bottom: 13px;
+                }
+
+                >p {
+                    font-size: 17px;
+                    padding-bottom: 20px;
+                }
+
+                >.row {
+                    height: 50px;
+
+                    >a {
+                        width: 210px;
+                        display: flex;
+                        border: 1px solid black;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 20px;
+                        padding: 15px 6px;
+                        transition: .4s;
+
+                        >.row {
+                            position: relative;
+                            transition: .2s;
+
+                            >i {
+                                font-size: 20px;
+                                margin-left: 3px;
+                                position: absolute;
+                                left: 0;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: black;
+                            border: none;
+                            color: white;
+
+                            >.row>i {
+                                left: 8px;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            >.row {
+                width: 75%;
+                /* border: 4px solid purple; */
+                justify-content: space-between;
+                padding-top: 0;
+
+                >figure {
+                    width: 280px;
+                    height: 400px;
+                    position: relative;
+                    transition: .4s;
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    >.row {
+                        /* background-color: black; */
+                        position: absolute;
+                        bottom: 20px;
+                        z-index: 999;
+                        width: 100%;
+                        height: 150px;
+                        justify-content: center;
+                        transition: .4s;
+
+                        >.row {
+                            width: 80%;
+                            background-color: white;
+                            align-items: center;
+
+                            >.row {
+                                justify-content: center;
+                                width: 100%;
+                                height: 100px;
+                                text-align: center;
+
+                                >a {
+                                    color: black;
+                                    width: 100%;
+
+                                    &:first-of-type {
+                                        font-size: 18px;
+                                        font-weight: 600;
+                                    }
+
+                                    &:last-of-type {
+                                        font-size: 13px;
+                                    }
+                                }
+
+                                >.row {
+                                    width: 80%;
+                                    height: 40px;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    >a {
+                                        justify-content: space-evenly;
+                                        align-items: center;
+
+                                        >i {
+                                            font-size: 15px;
+                                            margin-left: 11px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &::after {
+                        transition: 1s;
+                        content: '';
+                        background-color: rgba(0, 0, 0, 0.24);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 99;
+                    }
+
+                    &:hover {
+                        /* &::after {
+                            height: 100%;
+                        } */
+                        cursor: pointer;
+                        transform: scale(1.02);
+
+                        >.row {
+                            bottom: 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* end meet */
+
+}
