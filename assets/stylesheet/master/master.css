@@ -371,7 +371,7 @@ main {
                     position: absolute;
                     top: 0;
                     left: 0;
-                    background-color: rgba(0, 0, 0, 0.616);
+                    background-color: rgba(0, 0, 0, 0.24);
                     width: 0;
                     height: 0;
                 }
