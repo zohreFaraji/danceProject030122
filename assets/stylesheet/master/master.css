@@ -326,14 +326,9 @@ main {
                         }
 
                         >p {
-
                             font-size: 13px;
-                        }
-
-                        >hr {
-                            font-size: 15px;
-                            border: .7px solid rgba(206, 203, 203, 0.623);
-                            margin: 24px 0;
+                            border-bottom: 2px solid rgba(206, 203, 203, 0.623);
+                            padding-bottom: 34px;
                         }
 
                         >a {
