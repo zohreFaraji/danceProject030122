@@ -1,6 +1,7 @@
-body{
+body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+
 main {
     width: 100%;
 
@@ -9,6 +10,8 @@ main {
         height: 50px;
         background-color: black;
         color: white;
+        position: relative;
+        z-index: 999;
 
         >.row {
             justify-content: space-between;
@@ -51,6 +54,7 @@ main {
             }
         }
     }
+
     /* end topSide  */
     /* start headTop */
     >.headTop {
@@ -980,7 +984,7 @@ main {
     >.studio {
         width: 100%;
         height: 100vh;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
         display: flex;
         justify-content: center;
 
@@ -988,6 +992,7 @@ main {
             width: 80%;
             height: 100%;
             text-align: center;
+
             >.parentChild {
                 display: flex;
                 justify-content: center;
@@ -1033,6 +1038,7 @@ main {
                                 object-fit: cover;
                                 padding-bottom: 20px;
                             }
+
                             &::after {
                                 content: '';
                                 width: 100%;
@@ -1050,5 +1056,189 @@ main {
             }
         }
     }
+
     /* end studio */
+    /* start classes */
+    >.classes {
+        width: 100%;
+        height: 110vh;
+        background-image: url(../../img/banner-2-scaled.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 80px;
+        position: relative;
+
+        >.classParent {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            padding: 140px;
+
+            >.row {
+                display: flex;
+
+                >article {
+                    width: 35%;
+
+                    >* {
+                        color: white;
+                        padding-bottom: 20px;
+                    }
+
+                    >h3 {
+                        font-size: 40px;
+                        font-weight: 600;
+                    }
+
+                    >p {
+                        font-size: 15px;
+                        font-weight: normal;
+                        line-height: 25px;
+                    }
+
+                    >a {
+                        width: 190px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 13px 0;
+                        color: white;
+                        border: 1px solid white;
+                        padding: 10px 24px;
+                        transition: .4s;
+
+                        >span {
+                            padding: 5px 0;
+                        }
+
+                        >.row {
+                            padding: 0 3px;
+                            position: relative;
+
+                            >i {
+                                display: flex;
+                                font-size: 20px;
+                                margin-left: 5px;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                left: 0;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: black;
+                            color: white;
+                            border: none;
+
+                            >.row>i {
+                                left: 8px;
+                            }
+                        }
+                    }
+                }
+
+                >.classType {
+                    width: 65%;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    >.row {
+                        width: 800px;
+                        height: 500px;
+                        /* border: 6px solid black; */
+
+                        >div {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            &:nth-of-type(1),
+                            &:nth-of-type(2),
+                            &:nth-of-type(3) {
+                                border-bottom: 2px solid rgba(66, 65, 65, 0.767);
+                            }
+
+                            >* {
+                                color: white;
+                                font-size: 15px;
+                            }
+
+                            >.row {
+                                display: flex;
+                                align-content: center;
+
+                                >* {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                }
+
+                                >h4 {
+                                    font-size: 28px;
+                                    font-weight: bold;
+                                    padding-bottom: 5px;
+                                }
+
+                                >span {
+                                    font-weight: normal;
+                                }
+                            }
+
+                            >a {
+                                width: 150px;
+                                height: 53px;
+                                display: flex;
+                                justify-content: center;
+                                background-color: white;
+                                margin: 13px 0;
+                                color: black;
+                                border: 1px solid white;
+                                padding: 10px 24px;
+
+                                >span {
+                                    padding: 5px 0;
+                                }
+
+                                >.row {
+                                    position: relative;
+
+                                    >i {
+                                        font-size: 20px;
+                                        margin-left: 5px;
+                                        position: absolute;
+                                        left: 0;
+                                        padding-top: 4px;
+                                    }
+                                }
+
+                                &:hover {
+                                    >.row>i {
+                                        left: 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.842);
+        }
+    }
+
+    /* end classes */
 }
