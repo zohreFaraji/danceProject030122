@@ -1,3 +1,6 @@
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 main {
     width: 100%;
 
@@ -48,7 +51,6 @@ main {
             }
         }
     }
-
     /* end topSide  */
     /* start headTop */
     >.headTop {
@@ -746,6 +748,7 @@ main {
         height: 80vh;
         margin: 16px 0;
         padding: 0 20px;
+        margin-bottom: 80px;
 
         >* {
             height: fit-content;
@@ -763,8 +766,12 @@ main {
             }
 
             >p {
-                font-size: 18px;
+                font-size: 15px;
+                font-weight: normal;
                 margin-bottom: 40px;
+                line-height: 25px;
+                width: 50%;
+                text-align: center;
             }
         }
 
@@ -784,7 +791,7 @@ main {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
-                        padding: 15px;
+                        padding: 20px;
                     }
 
                     >.row {
@@ -835,7 +842,7 @@ main {
         background-size: cover;
         background-attachment: fixed;
         position: relative;
-        margin-bottom: 100px;
+        margin-bottom: 110px;
 
         >.childDance {
             width: 100%;
@@ -969,4 +976,79 @@ main {
     }
 
     /* end attachmentDance */
+    /* start studio */
+    >.studio {
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: center;
+
+        >.boxStudio {
+            width: 80%;
+            height: 100%;
+            text-align: center;
+            >.parentChild {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                width: 100%;
+                flex-wrap: wrap;
+
+                >.txtStudio {
+                    width: 70%;
+
+                    >* {
+                        color: black;
+                        padding: 10px;
+                    }
+
+                    >h2 {
+                        font-size: 49px;
+                    }
+
+                    >p {
+                        font-size: 15px;
+                        font-weight: normal;
+                    }
+                }
+
+                >.galleryStudio {
+                    width: 97%;
+                    margin-top: 30px;
+
+                    >.row {
+                        display: flex;
+                        justify-content: space-around;
+
+                        >figure {
+                            width: 280px;
+                            height: 280px;
+                            position: relative;
+                            transition: .4s;
+
+                            >img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                padding-bottom: 20px;
+                            }
+                            &::after {
+                                content: '';
+                                width: 100%;
+                                height: 260px;
+                                background-color: rgba(0, 0, 0, 0.26);
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                z-index: 999;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    /* end studio */
 }
