@@ -2,6 +2,42 @@ body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+.btnpub {
+    >a {
+        width: 150px;
+        height: 53px;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        margin: 13px 0;
+        color: black;
+        border: 1px solid white;
+        padding: 10px 24px;
+
+        >span {
+            padding: 5px 0;
+        }
+
+        >.row {
+            position: relative;
+
+            >i {
+                font-size: 20px;
+                margin-left: 5px;
+                position: absolute;
+                left: 0;
+                padding-top: 4px;
+            }
+        }
+
+        &:hover {
+            >.row>i {
+                left: 8px;
+            }
+        }
+    }
+}
+
 /* start bottomFixedImage */
 .bottomImage {
     position: absolute;
@@ -1150,11 +1186,10 @@ main {
     /* start classes */
     >.classes {
         width: 100%;
-        height: 110vh;
+        height: 80vh;
         background-image: url(../../img/banner-2-scaled.jpg);
         background-size: cover;
         background-position: center;
-        margin-bottom: 80px;
         position: relative;
 
         >.classParent {
@@ -1330,4 +1365,77 @@ main {
     }
 
     /* end classes */
+
+    /* start stories2 */
+    >.stories2 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+
+        >.box {
+            width: 80%;
+            height: 100%;
+
+            >.row {
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                >* {
+                    /* width: 50%; */
+                    height: 80vh;
+                }
+
+                >figure {
+                    width: 532px;
+                    height: 562px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                >article {
+                    width: 483px;
+                    height: 354px;
+
+                    >h3 {
+                        font-size: 40px;
+                        font-weight: 600;
+                        line-height: 48px;
+                        letter-spacing: 0.225px;
+                        margin-bottom: 30px;
+                    }
+
+                    >p {
+                        font-size: 17px;
+                        line-height: 25.8px;
+                        padding-bottom: 38px;
+                    }
+
+                    >.btnpub {
+                        >a {
+                            width: 220px;
+                            border: 1px solid black;
+                            padding-right: 34px;
+
+                            &:hover {
+                                background-color: black;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* end stories2 */
 }
