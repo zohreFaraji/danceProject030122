@@ -1,6 +1,27 @@
-body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+@font-face {
+    font-family: sora;
+    src: url(../font/Sora-Light.woff2);
 }
+
+@font-face {
+    font-family: arial;
+    src: url(../font/ARIAL.TTF);
+}
+
+@font-face {
+    font-family: helvetica;
+    src: url(../font/Helvetica.ttf);
+}
+
+@font-face {
+    font-family: sans-serif;
+    src: url(../font/Roboto-Light.ttf);
+}
+
+body {
+    font-family: sora, aria, helvetica, sans-serif;
+}
+
 
 .btnpub {
     >a {
@@ -304,51 +325,54 @@ main {
                     line-height: 73px;
                 }
 
+                >h2,
+                >p {
+                    letter-spacing: 0.225px;
+                }
+
                 >h2 {
                     font-size: 73px;
                     font-weight: 600;
+                    line-height: 87.6px;
                 }
 
                 >p {
+                    margin-top: 14px;
                     font-size: 20px;
+                    line-height: 26px;
                 }
 
-                >.row {
-                    margin-top: 30px;
-                    justify-content: center;
+                .btnpub {
+                    margin-top: 55px;
                     width: 100%;
-                    height: 55px;
+                    height: 53px;
 
                     >a {
-                        width: 260px;
-                        background-color: black;
-                        color: white;
+                        width: 239px;
+                        /* margin-top: 0; */
                         display: flex;
-                        justify-content: center;
+                        align-content: center;
+                        padding-left: 0;
+                        margin-bottom: 0;
 
-                        >.row {
+                        >span {
+                            font-size: 14px;
+                            line-height: 18px;
+                            text-align: center;
+                        }
+
+                        >.row>i {
                             display: flex;
-                            justify-content: center;
-                            position: relative;
-                            transition: .4s;
-
-                            >i {
-                                padding-left: 5px;
-                                font-size: 20px;
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                            }
+                            height: 100%;
+                            font-size: 20px;
+                            line-height: 14px;
+                            align-items: center;
                         }
 
                         &:hover {
-                            background-color: white;
-                            color: black;
-                        }
-
-                        &:hover>div {
-                            left: 5px;
-                            color: black;
+                            background-color: black;
+                            color: white;
+                            border: none;
                         }
                     }
                 }
@@ -382,10 +406,21 @@ main {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            >a>ins {
+                padding-left: 6px;
+
+                &:hover {
+                    color: rgb(54, 144, 247);
+                }
             }
         }
     }
 
+    /* end off */
     /* start fashion */
     >.fashion {
         width: 100%;
@@ -412,10 +447,9 @@ main {
                 >.row {
                     display: flex;
                     justify-content: center;
-                    /* align-items: center; */
                     color: white;
                     width: 333px;
-                    height: 276px;
+                    height: 233px;
                     position: absolute;
                     bottom: -40px;
                     left: 20px;
@@ -425,8 +459,12 @@ main {
                     z-index: 999;
 
                     >.box {
-                        >* {
-                            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        height: 100%;
+                        width: 100%;
+
+                        >h3,
+                        >p {
+                            height: 67.333px;
                         }
 
                         >h3 {
@@ -437,33 +475,45 @@ main {
 
                         >p {
                             font-size: 13px;
-                            border-bottom: 2px solid rgba(206, 203, 203, 0.623);
-                            padding-bottom: 34px;
+                            position: relative;
+                            text-align: center;
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                top: 50px;
+                                left: 10%;
+                                width: 80%;
+                                height: 2px;
+                                border-bottom: 2px solid rgba(206, 203, 203, 0.623);
+
+                            }
                         }
 
-                        >a {
-                            padding: 20px 0;
+                        >div {
                             display: flex;
                             justify-content: center;
+                            align-items: center;
+
+                            >img {
+                                width: 10%;
+                            }
+
+                            >a {
+                                width: 20%;
+                                display: flex;
+                                justify-content: center;
+                                font-size: 14px;
+                                line-height: 18px;
+                            }
                         }
 
-                        >button {
-                            width: 333px;
-                            height: 58px;
-                            background-color: black;
-                            position: absolute;
-                            bottom: 0;
-                            left: 0;
-                            border: none;
-                            outline: none;
-                            color: white;
-                            font-size: 14px;
-                            cursor: pointer;
-
-                            >i {
-                                font-size: 14px;
-                                height: 100%;
-                                align-items: center;
+                        .btnpub {
+                            >a {
+                                width: 120%;
+                                background-color: black;
+                                color: white;
+                                border: none;
                             }
                         }
                     }
@@ -515,17 +565,21 @@ main {
                     padding: 130px 100px;
 
                     >* {
-                        margin-bottom: 60px;
+                        margin-bottom: 39px;
                     }
 
                     >h2 {
                         font-size: 40px;
-                        font-weight: bolder;
+                        font-weight: 600;
+                        line-height: 48px;
                     }
 
                     >p {
-                        font-size: 17px;
+                        font-size: 15px;
                         color: rgba(22, 22, 22, 0.911);
+                        font-weight: 400;
+                        line-height: 25.8px;
+                        letter-spacing: 0.225px;
                     }
 
                     >a {
@@ -537,10 +591,17 @@ main {
                         display: flex;
                         transition: .4s;
 
+                        >span {
+                            display: flex;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+
                         .row {
                             position: relative;
                             transition: .2s;
                             margin-left: 3px;
+                            font-size: 14px;
 
                             >i {
                                 font-size: 20px;
@@ -653,14 +714,18 @@ main {
                 }
 
                 >h2 {
-                    font-size: 80px;
-                    ;
-                    font-weight: bolder;
+                    font-size: 73px;
+                    font-weight: 600;
+                    line-height: 88.33px;
+                    letter-spacing: 0.225px;
+                    margin-bottom: 26px;
                 }
 
                 >p {
                     font-size: 20px;
                     font-weight: normal;
+                    line-height: 26px;
+                    letter-spacing: 0.225px;
                 }
 
                 >.row {
@@ -672,8 +737,13 @@ main {
                         margin-top: 80px;
                         padding: 18px 27px;
                         border: 1px solid white;
-                        width: 30%;
+                        width: 236px;
+                        height: 52px;
                         transition: .4s;
+                        background-color: white;
+                        color: black;
+                        font-size: 14px;
+                        line-height: 18px;
 
                         >.row {
                             position: relative;
@@ -714,12 +784,12 @@ main {
         display: flex;
 
         >.row {
-            width: 85%;
+            width: 80%;
             height: 100%;
             display: flex;
 
             >div {
-                width: 25%;
+                width: 20%;
                 padding: 20px;
                 padding-bottom: 0;
 
@@ -734,41 +804,22 @@ main {
                     padding-bottom: 20px;
                 }
 
-                >.row {
-                    height: 50px;
 
+
+                .btnpub {
                     >a {
-                        width: 210px;
-                        display: flex;
+                        width: 100%;
                         border: 1px solid black;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-top: 20px;
-                        padding: 15px 6px;
-                        transition: .4s;
+                        padding-left: 5px;
 
-                        >.row {
-                            position: relative;
-                            transition: .2s;
-
-                            >i {
-                                font-size: 20px;
-                                margin-left: 3px;
-                                position: absolute;
-                                left: 0;
-                            }
+                        >span {
+                            font-size: 14px;
+                            line-height: 18px;
                         }
 
                         &:hover {
                             background-color: black;
-                            border: none;
                             color: white;
-
-                            >.row>i {
-                                left: 8px;
-                                color: white;
-                            }
                         }
                     }
                 }
@@ -778,6 +829,7 @@ main {
                 width: 75%;
                 justify-content: space-between;
                 padding-top: 0;
+                margin-left: 5%;
 
                 >figure {
                     width: 280px;
@@ -874,7 +926,7 @@ main {
     /* start stories */
     >.stories {
         width: 100%;
-        height: 80vh;
+        height: 87vh;
         margin: 16px 0;
         padding: 0 20px;
         margin-bottom: 80px;
@@ -911,8 +963,8 @@ main {
                 align-items: center;
 
                 >figure {
-                    width: 378px;
-                    height: 400px;
+                    width: 407px;
+                    height: 425px;
                     position: relative;
                     transition: .4s;
 
@@ -936,15 +988,21 @@ main {
                         }
 
                         >span {
-                            padding: 10px 20px;
+                            display: flex;
+                            width: 120px;
+                            height: 30px;
+                            padding: 5px 10px;
                             border: 1px solid white;
-                            margin: 25px;
+                            margin: 36px 30px;
+                            font-size: 14px;
+                            letter-spacing: 0.225px;
+                            text-align: center;
                         }
 
                         >p {
                             font-size: 18px;
                             font-weight: bold;
-                            padding: 60px 30px;
+                            padding: 60px 35px;
                         }
                     }
 
@@ -1047,7 +1105,7 @@ main {
                             }
                         }
 
-                        >a {
+                        /* >a {
                             width: 300px;
                             display: flex;
                             justify-content: center;
@@ -1085,6 +1143,25 @@ main {
 
                                 >.row>i {
                                     left: 8px;
+                                }
+                            }
+                        } */
+
+                        .btnpub {
+                            >a {
+                                width: 272px;
+                                height: 54px;
+                                padding-left: 8px;
+                                border: 1px solid black;
+
+                                >span {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+
+                                &:hover {
+                                    background-color: black;
+                                    color: white;
                                 }
                             }
                         }
@@ -1186,7 +1263,7 @@ main {
     /* start classes */
     >.classes {
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         background-image: url(../../img/banner-2-scaled.jpg);
         background-size: cover;
         background-position: center;
@@ -1203,9 +1280,10 @@ main {
 
             >.row {
                 display: flex;
+                margin: 0 30px;
 
                 >article {
-                    width: 35%;
+                    width: 27%;
 
                     >* {
                         color: white;
@@ -1220,53 +1298,28 @@ main {
                     >p {
                         font-size: 15px;
                         font-weight: normal;
-                        line-height: 25px;
+                        line-height: 25.8px;
+                        letter-spacing: 0.225px;
                     }
 
-                    >a {
-                        width: 190px;
-                        height: 50px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin: 13px 0;
-                        color: white;
-                        border: 1px solid white;
-                        padding: 10px 24px;
-                        transition: .4s;
-
-                        >span {
-                            padding: 5px 0;
-                        }
-
-                        >.row {
-                            padding: 0 3px;
-                            position: relative;
-
-                            >i {
-                                display: flex;
-                                font-size: 20px;
-                                margin-left: 5px;
-                                align-items: center;
-                                justify-content: center;
-                                position: absolute;
-                                left: 0;
-                            }
-                        }
-
-                        &:hover {
+                    .btnpub {
+                        >a {
                             background-color: black;
                             color: white;
-                            border: none;
+                            width: 190px;
+                            height: 50px;
+                            padding-left: 3px;
 
-                            >.row>i {
-                                left: 8px;
+                            &:hover {
+                                background-color: white;
+                                color: black;
                             }
                         }
                     }
                 }
 
                 >.classType {
+                    margin-left: 8%;
                     width: 65%;
                     display: flex;
                     justify-content: flex-end;
@@ -1274,7 +1327,6 @@ main {
                     >.row {
                         width: 800px;
                         height: 500px;
-                        /* border: 6px solid black; */
 
                         >div {
                             width: 100%;
@@ -1305,7 +1357,9 @@ main {
 
                                 >h4 {
                                     font-size: 28px;
-                                    font-weight: bold;
+                                    font-weight: 600;
+                                    letter-spacing: 0.225px;
+                                    line-height: 33.6px;
                                     padding-bottom: 5px;
                                 }
 
@@ -1314,37 +1368,9 @@ main {
                                 }
                             }
 
-                            >a {
-                                width: 150px;
-                                height: 53px;
-                                display: flex;
-                                justify-content: center;
-                                background-color: white;
-                                margin: 13px 0;
-                                color: black;
-                                border: 1px solid white;
-                                padding: 10px 24px;
-
-                                >span {
-                                    padding: 5px 0;
-                                }
-
-                                >.row {
-                                    position: relative;
-
-                                    >i {
-                                        font-size: 20px;
-                                        margin-left: 5px;
-                                        position: absolute;
-                                        left: 0;
-                                        padding-top: 4px;
-                                    }
-                                }
-
-                                &:hover {
-                                    >.row>i {
-                                        left: 8px;
-                                    }
+                            .btnpub {
+                                >a {
+                                    padding-left: 6px;
                                 }
                             }
                         }
@@ -1423,8 +1449,9 @@ main {
                     >.btnpub {
                         >a {
                             width: 220px;
+                            height: 53px;
                             border: 1px solid black;
-                            padding-right: 34px;
+                            padding-left: 6px;
 
                             &:hover {
                                 background-color: black;
@@ -1495,8 +1522,9 @@ main {
                     >.btnpub {
                         >a {
                             width: 220px;
+                            height: 53px;
                             border: 1px solid black;
-                            padding-right: 34px;
+                            padding-left: 6px;
 
                             &:hover {
                                 background-color: black;
@@ -1553,49 +1581,30 @@ main {
                 }
 
                 >h2 {
-                    font-size: 80px;
-                    ;
-                    font-weight: bolder;
+                    font-size: 73px;
+                    font-weight: 600;
+                    margin-bottom: 7px;
+                    line-height: 88.33px;
+                    letter-spacing: 0.225px;
                 }
 
                 >p {
                     font-size: 20px;
-                    font-weight: normal;
+                    /* font-weight: normal; */
+                    line-height: 26px;
+                    margin-bottom: 40px;
                 }
 
-                >.row {
-                    justify-content: center;
-
+                >.btnpub {
                     >a {
-                        display: flex;
-                        outline: none;
-                        margin-top: 80px;
-                        padding: 18px 27px;
-                        border: 1px solid white;
-                        width: 30%;
-                        transition: .4s;
-
-                        >.row {
-                            position: relative;
-                            transition: .2s;
-
-                            >i {
-                                font-size: 20px;
-                                margin-left: 5px;
-                                position: absolute;
-                                left: 0;
-                            }
-                        }
+                        width: 250px;
+                        height: 52px;
+                        border: 1px solid black;
+                        padding-left: 6px;
 
                         &:hover {
                             background-color: black;
-                            border: none;
                             color: white;
-
-                            >.row>i {
-                                left: 14px;
-                                color: white;
-                            }
                         }
                     }
                 }
@@ -1668,6 +1677,10 @@ main {
                                 align-items: center;
                                 justify-content: center;
                                 margin-right: 6px;
+
+                                &:hover {
+                                    background-color: rgb(104, 104, 105);
+                                }
                             }
                         }
                     }
@@ -1757,31 +1770,31 @@ main {
                         }
                     }
                 }
-                
+
             }
         }
+
         >p {
             padding-top: 33px;
             font-size: 14px;
             line-height: 22px;
-            font-weight: bold;
+            /* font-weight: bold; */
+            font-family: sans-serif;
             transition: .4s;
             color: white;
             position: absolute;
             left: 50%;
             bottom: 28px;
-            transform: translate(-50%,0);
+            transform: translate(-50%, 0);
 
-            >a>span{
+            >a>span {
                 font-size: 17px;
+
                 &:hover {
                     color: #648ad6;
+                }
             }
         }
-        }
-
-
-                        
     }
 
     /* end footer */
