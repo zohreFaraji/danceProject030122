@@ -16,7 +16,7 @@
 ![41](https://github.com/zohreFaraji/danceProject030122/assets/165832749/8acab25e-5970-41dc-bc3c-14480e1d306a)
 ![42](https://github.com/zohreFaraji/danceProject030122/assets/165832749/d5eded29-a1e9-49bb-ae1e-28099ce58b59)
 
-- [Demo Project](https://github.com/zohreFaraji/danceProject030122)
+- [Demo Project](https://zohrefaraji.github.io/danceProject030122/)
 
 - Developed by zohre faraji
 
