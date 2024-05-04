@@ -84,14 +84,11 @@ body {
             position: relative;
             z-index: 999;
             transition: .6s;
-            box-shadow: 4px 5px 9px 3px orange;
+            box-shadow: 4px 5px 9px 7px rgba(245, 65, 92, 0.911);
 
             &:hover {
-                /* transform: scale(1.03); */
                 cursor: pointer;
                 transform: perspective(200px) rotate3D(0, 1, 0, 5deg);
-
-
             }
         }
 
@@ -103,7 +100,7 @@ body {
             bottom: 47px;
             right: 32px;
             transition: 1s;
-            border: 3px solid orange;
+            border: 3px solid rgba(245, 65, 92, 0.911);
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -118,10 +115,12 @@ body {
 
             &:hover {
                 transform: scale(1.05);
-                background-color: rgba(255, 166, 0, 0.849);
+                /* background-color: rgb(172, 66, 82); */
+                background-color: rgba(245, 65, 92, 0.911);
 
                 >i {
-                    color: rgb(0, 0, 0);
+                    /* color: rgb(0, 0, 0); */
+                    color: white;
                 }
             }
         }
