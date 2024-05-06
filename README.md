@@ -1,7 +1,5 @@
 # Dance-Project
 
-**If you have a lot of information to display on your site, why don't you use my accordion menu**
-
 ![30](https://github.com/zohreFaraji/danceProject030122/assets/165832749/36e0ed5e-40d3-4c5e-884c-a08c4c233872)
 ![31](https://github.com/zohreFaraji/danceProject030122/assets/165832749/962e5f68-a0f4-4496-98d9-5180eaf225fe)
 ![32](https://github.com/zohreFaraji/danceProject030122/assets/165832749/f3e19901-fed6-45c8-8cb2-faad4a4e283c)
@@ -15,6 +13,9 @@
 ![40](https://github.com/zohreFaraji/danceProject030122/assets/165832749/1dd9fa69-47b4-4172-b5c9-7e29630e58bf)
 ![41](https://github.com/zohreFaraji/danceProject030122/assets/165832749/8acab25e-5970-41dc-bc3c-14480e1d306a)
 ![42](https://github.com/zohreFaraji/danceProject030122/assets/165832749/d5eded29-a1e9-49bb-ae1e-28099ce58b59)
+
+
+- **You can see information about my project**
 
 - [Demo Project](https://zohrefaraji.github.io/danceProject030122/)
 
