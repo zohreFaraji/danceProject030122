@@ -15,7 +15,7 @@
 ![42](https://github.com/zohreFaraji/danceProject030122/assets/165832749/d5eded29-a1e9-49bb-ae1e-28099ce58b59)
 
 
-- **You can see information about my project**
+**You can see information about my project**
 
 - [Demo Project](https://zohrefaraji.github.io/danceProject030122/)
 
